@@ -1,6 +1,6 @@
 # Poli Shark
 
-Site institucional estático da Poli Shark, preparado para publicação no Cloudflare Pages.
+Site institucional estático da Poli Shark, preparado para publicação como Static Assets no Cloudflare Workers.
 
 ## Páginas
 
@@ -31,17 +31,18 @@ python3 -m http.server 8080
 
 Abra `http://localhost:8080`.
 
-## Cloudflare Pages
+## Cloudflare Workers
 
-No painel do Cloudflare Pages, conecte este repositório e use:
+Na tela **Create an app**, conecte este repositório e use:
 
-- Framework preset: `None`
-- Build command: deixe vazio
-- Build output directory: `/`
+- Project name: `polishark-com-br`
+- Build command: `npm run build`
+- Deploy command: `npx wrangler deploy`
+- Preview command: `npx wrangler preview`
 
-Depois, em **Custom domains**, conecte `polishark.com.br` e `www.polishark.com.br`.
+Depois do primeiro deploy, conecte `polishark.com.br` e `www.polishark.com.br` em **Domains & Routes**.
 
-O passo a passo da integração Git e do fluxo automático está em [`docs/cloudflare-pages.md`](docs/cloudflare-pages.md).
+O passo a passo da integração Git e do fluxo automático está em [`docs/cloudflare-workers.md`](docs/cloudflare-workers.md).
 
 ## Imagem gerada
 

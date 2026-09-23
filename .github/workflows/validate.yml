@@ -29,8 +29,12 @@ jobs:
           test -f assets/icons.svg
           test -f assets/polishark-hero.webp
 
+      - name: Build deployment directory
+        run: npm run build
+
       - name: Smoke test routes
         run: |
+          cd dist
           python3 -m http.server 4173 >/tmp/polishark-server.log 2>&1 &
           server_pid=$!
           trap 'kill "$server_pid"' EXIT
