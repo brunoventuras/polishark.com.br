@@ -1,0 +1,40 @@
+name: Validate static site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Validate JavaScript syntax
+        run: |
+          node --check app.js
+          node --check site-config.js
+
+      - name: Check required static assets
+        run: |
+          test -f index.html
+          test -f links/index.html
+          test -f styles.css
+          test -f enhancements.css
+          test -f assets/icons.svg
+          test -f assets/polishark-hero.webp
+
+      - name: Smoke test routes
+        run: |
+          python3 -m http.server 4173 >/tmp/polishark-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          sleep 1
+          curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null
+          curl --fail --silent --show-error http://127.0.0.1:4173/links/ >/dev/null
+

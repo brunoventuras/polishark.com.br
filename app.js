@@ -20,6 +20,10 @@
     link.href = config.instagram;
   });
 
+  document.querySelectorAll("[data-address-link]").forEach((link) => {
+    link.href = config.maps;
+  });
+
   document.querySelectorAll("[data-address]").forEach((node) => {
     node.innerHTML = config.addressHtml;
   });
