@@ -16,7 +16,7 @@
   min-width: 520px;
   min-height: 240px;
   border-radius: 50%;
-  opacity: 0.17;
+  opacity: 0.28;
   background:
     radial-gradient(ellipse at 25% 60%, rgba(255, 255, 255, 0.35), transparent 48%),
     radial-gradient(ellipse at 70% 45%, rgba(180, 184, 190, 0.3), transparent 52%);
@@ -28,14 +28,14 @@
 .hero-mist-one {
   right: 17%;
   top: 22%;
-  animation: mist-drift-one 14s ease-in-out infinite alternate;
+  animation: mist-drift-one 10s ease-in-out infinite alternate;
 }
 
 .hero-mist-two {
   right: -12%;
   bottom: 8%;
-  opacity: 0.11;
-  animation: mist-drift-two 18s ease-in-out infinite alternate;
+  opacity: 0.2;
+  animation: mist-drift-two 13s ease-in-out infinite alternate;
 }
 
 .hero-light-sweep {
@@ -220,13 +220,13 @@
 }
 
 @keyframes mist-drift-one {
-  from { transform: translate3d(-4%, 2%, 0) scale(0.92); opacity: 0.1; }
-  to { transform: translate3d(12%, -5%, 0) scale(1.14); opacity: 0.2; }
+  from { transform: translate3d(-7%, 3%, 0) scale(0.92); opacity: 0.18; }
+  to { transform: translate3d(16%, -7%, 0) scale(1.18); opacity: 0.34; }
 }
 
 @keyframes mist-drift-two {
-  from { transform: translate3d(8%, 4%, 0) scale(1); }
-  to { transform: translate3d(-16%, -7%, 0) scale(1.18); }
+  from { transform: translate3d(10%, 5%, 0) scale(0.98); opacity: 0.14; }
+  to { transform: translate3d(-20%, -9%, 0) scale(1.22); opacity: 0.27; }
 }
 
 @keyframes light-sweep {
@@ -286,6 +286,6 @@
   }
 
   .hero-mist {
-    opacity: 0.1;
+    opacity: 0.16;
   }
 }
