@@ -14,7 +14,7 @@ Os dados de WhatsApp, telefone, Instagram e endereço ficam centralizados em `si
 Antes de publicar, confirme os dados recuperados do site antigo:
 
 - WhatsApp: `(32) 98421-8586`
-- Endereço: `Av. Presidente Itamar Franco, 2300 — São Mateus, Juiz de Fora/MG`
+- Endereço: `Rua Professor Vicente Mazini, 100 — Bom Pastor, Juiz de Fora/MG`
 - Instagram: o endereço usado é `instagram.com/polishark/` e precisa ser validado
 - Localização: `https://maps.app.goo.gl/firqMXVTnroWTUoy7?g_st=iwb`
 - O texto “Desde 2013” foi inferido a partir do histórico do site antigo e também precisa ser validado

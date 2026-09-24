@@ -13,7 +13,13 @@ const files = [
   "_headers",
   "assets/favicon.svg",
   "assets/icons.svg",
-  "assets/polishark-hero.webp"
+  "assets/polishark-hero.webp",
+  "assets/polishark-logo.webp",
+  "assets/trabalho-detalhamento.webp",
+  "assets/trabalho-polimento.webp",
+  "assets/trabalho-acabamento.webp",
+  "assets/curso-turma.webp",
+  "assets/bruno-polishark.webp"
 ];
 
 rmSync(output, { recursive: true, force: true });

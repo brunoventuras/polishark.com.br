@@ -4,6 +4,6 @@ window.POLISHARK_CONFIG = {
   phoneDisplay: "(32) 98421-8586",
   instagram: "https://www.instagram.com/polishark/",
   maps: "https://maps.app.goo.gl/firqMXVTnroWTUoy7?g_st=iwb",
-  addressHtml: "Av. Presidente Itamar Franco, 2300<br>São Mateus · Juiz de Fora, MG",
+  addressHtml: "Rua Professor Vicente Mazini, 100<br>Bom Pastor · Juiz de Fora, MG",
   defaultMessage: "Olá! Vim pelo site da Poli Shark e gostaria de agendar uma avaliação."
 };
