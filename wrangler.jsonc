@@ -3,6 +3,16 @@
   "name": "polishark-com-br",
   "compatibility_date": "2026-09-23",
   "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "polishark.com.br/*",
+      "zone_name": "polishark.com.br"
+    },
+    {
+      "pattern": "www.polishark.com.br/*",
+      "zone_name": "polishark.com.br"
+    }
+  ],
   "assets": {
     "directory": "./dist",
     "html_handling": "auto-trailing-slash",
