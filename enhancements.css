@@ -342,7 +342,7 @@
 
 .showcase-grid {
   display: grid;
-  grid-template-columns: 1.18fr 0.91fr 0.91fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: end;
   gap: clamp(0.75rem, 1.5vw, 1.25rem);
   margin-top: clamp(3rem, 7vw, 6rem);
@@ -357,7 +357,7 @@
 }
 
 .showcase-card-tall {
-  height: clamp(470px, 52vw, 650px);
+  height: clamp(390px, 43vw, 535px);
 }
 
 .showcase-card::after {
@@ -481,20 +481,13 @@
   }
 
   .showcase-grid {
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .showcase-card:last-child {
-    grid-column: 2;
-  }
-
-  .showcase-card-tall {
-    grid-row: span 2;
-    height: 700px;
-  }
-
+  .showcase-card,
+  .showcase-card-tall,
   .showcase-card:not(.showcase-card-tall) {
-    height: 340px;
+    height: clamp(360px, 55vw, 480px);
   }
 }
 
@@ -508,21 +501,16 @@
   }
 
   .showcase-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
-  .showcase-card-tall {
-    grid-column: 1 / -1;
-    grid-row: auto;
-    height: min(118vw, 570px);
-  }
-
-  .showcase-card:not(.showcase-card-tall) {
-    height: min(75vw, 390px);
-  }
-
+  .showcase-card,
+  .showcase-card-tall,
+  .showcase-card:not(.showcase-card-tall),
   .showcase-card:last-child {
     grid-column: auto;
+    grid-row: auto;
+    height: min(118vw, 500px);
   }
 
   .course-visual {
