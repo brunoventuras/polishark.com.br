@@ -294,7 +294,7 @@
 /* Identidade oficial e registros reais */
 .brand-logo {
   display: block;
-  width: clamp(150px, 14vw, 188px);
+  width: clamp(118px, 10vw, 148px);
   height: auto;
 }
 
@@ -500,7 +500,7 @@
 
 @media (max-width: 760px) {
   .brand-logo {
-    width: 148px;
+    width: 122px;
   }
 
   .showcase-heading h2 {
