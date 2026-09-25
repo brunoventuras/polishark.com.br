@@ -20,6 +20,7 @@ const files = [
   "assets/trabalho-acabamento.webp",
   "assets/curso-turma.webp",
   "assets/bruno-polishark.webp",
+  "assets/bruno-links.webp",
   "assets/carro/hero-background.webp",
   "assets/carro/hero-car.webp",
   "assets/carro/hero-smoke.webp",
