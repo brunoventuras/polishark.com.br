@@ -58,13 +58,16 @@
 
     <main id="conteudo">
       <section class="hero" id="inicio" aria-labelledby="hero-title">
-        <div class="hero-media" role="img" aria-label="Automóvel preto com acabamento vitrificado em estúdio"></div>
-        <div class="hero-shade"></div>
-        <div class="hero-effects" aria-hidden="true">
-          <span class="hero-mist hero-mist-one"></span>
-          <span class="hero-mist hero-mist-two"></span>
-          <span class="hero-light-sweep"></span>
+        <div class="hero-media" role="img" aria-label="Automóvel preto com acabamento vitrificado em estúdio">
+          <img class="hero-layer hero-layer-background" src="/assets/carro/hero-background.webp" width="1916" height="821" alt="" fetchpriority="high" />
+          <div class="hero-smoke-field" aria-hidden="true">
+            <img class="hero-smoke hero-smoke-one" src="/assets/carro/hero-smoke.webp" width="1916" height="821" alt="" />
+            <img class="hero-smoke hero-smoke-two" src="/assets/carro/hero-smoke.webp" width="1916" height="821" alt="" />
+          </div>
+          <img class="hero-layer hero-layer-car" src="/assets/carro/hero-car.webp" width="1916" height="821" alt="" fetchpriority="high" />
+          <img class="hero-layer hero-layer-red-light" src="/assets/carro/hero-red-light.webp" width="1916" height="821" alt="" aria-hidden="true" />
         </div>
+        <div class="hero-shade"></div>
         <div class="hero-grid container">
           <div class="hero-copy reveal">
             <span class="eyebrow"><i></i> Estética automotiva de alta performance</span>

@@ -19,7 +19,11 @@ const files = [
   "assets/trabalho-polimento.webp",
   "assets/trabalho-acabamento.webp",
   "assets/curso-turma.webp",
-  "assets/bruno-polishark.webp"
+  "assets/bruno-polishark.webp",
+  "assets/carro/hero-background.webp",
+  "assets/carro/hero-car.webp",
+  "assets/carro/hero-smoke.webp",
+  "assets/carro/hero-red-light.webp"
 ];
 
 rmSync(output, { recursive: true, force: true });
