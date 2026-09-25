@@ -338,16 +338,16 @@
 
 .links-person {
   position: absolute;
-  top: 460px;
-  left: -42px;
+  top: 35px;
+  left: -180px;
   z-index: 1;
-  width: 360px;
-  opacity: 0.64;
+  width: 590px;
+  opacity: 0.34;
   pointer-events: none;
-  filter: drop-shadow(24px 8px 44px rgba(227, 27, 35, 0.16));
-  transform: rotate(-1deg);
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 78%, transparent 100%);
-  mask-image: linear-gradient(to bottom, #000 0%, #000 78%, transparent 100%);
+  filter: grayscale(1) contrast(1.08) brightness(0.88) drop-shadow(30px 12px 64px rgba(227, 27, 35, 0.18));
+  transform: rotate(-1.5deg);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 62%, rgba(0, 0, 0, 0.7) 76%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 62%, rgba(0, 0, 0, 0.7) 76%, transparent 100%);
 }
 
 .links-person img {
@@ -551,11 +551,11 @@
   }
 
   .links-person {
-    top: 550px;
-    left: -110px;
-    width: 300px;
-    opacity: 0.4;
-    filter: drop-shadow(18px 6px 34px rgba(227, 27, 35, 0.12));
+    top: 28px;
+    left: -170px;
+    width: 500px;
+    opacity: 0.24;
+    filter: grayscale(1) contrast(1.06) brightness(0.84) drop-shadow(20px 8px 44px rgba(227, 27, 35, 0.14));
   }
 
   .showcase-heading h2 {
