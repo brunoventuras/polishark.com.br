@@ -14,7 +14,7 @@ const files = [
   "assets/favicon.svg",
   "assets/icons.svg",
   "assets/polishark-hero.webp",
-  "assets/polishark-logo.webp",
+  "assets/polishark-logo-transp.webp",
   "assets/trabalho-detalhamento.webp",
   "assets/trabalho-polimento.webp",
   "assets/trabalho-acabamento.webp",
